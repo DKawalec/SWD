@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<META charset="UTF-8"/>
+		<META HTTP-EQUIV="cache-control" CONTENT="no-cache">
+		<title>Projekt SWD</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ink.css" />
+		<script src="js/lib/underscore-1.4.3.js"></script>
+		<script src="js/lib/ink-all.min.js"></script>
+		<script src="js/lib/jquery-1.9.1.js"></script>
+		<script src="js/filehandler.js"></script>
+		<script src="js/inputreader.js"></script>
+		<script src="js/decisionmaker.js"></script>
+		<script src="js/displayer.js"></script>
+		<script src="js/controller.js"></script>
+	</head>
+	<body>
+		
+		<div class="ink-grid">
+			<div id="header"></div>
+			<div id="content" class="bordered">
+				<div id="form" class="space">
+					<h3>Aplikacja wspomagająca podejmowanie decyzji wyborczych</h3>
+					<div class="note space"> Użyj suwaków po lewej stronie, aby określić swoje poglądy w czterech kategoriach. Za pomocą suwaków po prawej stronie ustaw, jak ważne jest dla Ciebie, by reprezentująca Cię partia uwzględniała daną kwestię w swoim programie. <p>Kiedy stan suwaków będzie adekwatnie reprezentował Twoje zdanie, naciśnij przycisk Decyzja.<p> </div>
+					<form class="ink-form space">
+						<fieldset class="column-group">
+							<div class="large-50 space content-center"><h4>pogląd</h4></div>
+							<div class="large-30 space push-right content-center"><h4>waga</h4></div>
+								<div class="control-group column-group gutters large-60">
+									<label for="social" class="content-right large-30">społeczeństwo</label>
+									<div class="control large-70">
+										<input type="range" min="1" step="1" value="4" max="7" id="social">
+									<p class="tip content-center"><span class="push-left">liberalny</span><span class="push-right">konserwatywny</span></p>
+									</div>
+								</div>
+								<div class="control-group column-group gutters large-40 push-right">
+									<label for="" class="content-right large-10"></label>
+									<div class="control large-90">
+										<input type="range" min="1" step="1" value="4" max="7" id="weight_social">
+									<p class="tip content-center"><span class="push-left">nieistotne</span><span class="push-right">bardzo ważne</span></p>
+									</div>
+								</div>
+								<div class="control-group column-group gutters large-60">
+									<label for="economy" class="content-right large-30">ekonomia</label>
+									<div class="control large-70">
+										<input type="range" min="1" step="1" value="4" max="7" id="economy">
+									<p class="tip content-center"><span class="push-left">interwencjonistyczny</span><span class="push-right">wolnorynkowy</span></p>
+									</div>
+								</div>
+								<div class="control-group column-group gutters large-40 push-right">
+									<label for="" class="content-right large-10"></label>
+									<div class="control large-90">
+										<input type="range" min="1" step="1" value="4" max="7" id="weight_economy">
+									<p class="tip content-center"><span class="push-left">nieistotne</span><span class="push-right">bardzo ważne</span></p>
+									</div>
+								</div>
+								<div class="control-group column-group gutters large-60">
+									<label for="religion" class="content-right large-30">religijność</label>
+									<div class="control large-70">
+										<input type="range" min="1" step="1" value="4" max="7" id="religion">
+									<p class="tip content-center"><span class="push-left">ateistyczny</span><span class="push-right">religijny</span></p>
+									</div>
+								</div>
+								<div class="control-group column-group gutters large-40 push-right">
+									<label for="" class="content-right large-10"></label>
+									<div class="control large-90">
+										<input type="range" min="1" step="1" value="4" max="7" id="weight_religion">
+									<p class="tip content-center"><span class="push-left">nieistotne</span><span class="push-right">bardzo ważne</span></p>
+									</div>
+								</div>
+								<div class="control-group column-group gutters large-60">
+									<label for="immigration" class="content-right large-30">imigracja</label>
+									<div class="control large-70">
+										<input type="range" min="1" step="1" value="4" max="7" id="immigration">
+									<p class="tip content-center"><span class="push-left">otwarte granice</span><span class="push-right">zamknięte granice</span></p>
+									</div>
+								</div>
+								<div class="control-group column-group gutters large-40 push-right">
+									<label for="" class="content-right large-10"></label>
+									<div class="control large-90">
+										<input type="range" min="1" step="1" value="4" max="7" id="weight_immigration">
+									<p class="tip content-center"><span class="push-left">nieistotne</span><span class="push-right">bardzo ważne</span></p>
+									</div>
+								</div>
+								<div class="control-group large-66 push-center content-center space">
+								    <label>Opcjonalnie: wskaż własny plik z danymi partii:</label>
+								    <div class="control">
+								 	   <div class="input-file"><input type="file" id="userfile"></div>
+								    </div>
+							    </div>
+							<div class="large-100 content-center">
+								    
+								<button class="ink-button green" id="submit">Decyzja</button>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div id="results" class="space">
+					<h3>Wyniki</h3>
+					<div class="content-center">
+						<img src="" alt="logo partii tutaj" id="partylogo"/>
+						<h5 id="decision">Nazwa wybranej partii</h5>
+						<p id="description">Tutaj opis wybranej partii</p>
+					</div>
+					<div class="space content-center">
+						<button type="button" class="ink-button" id="restart">Powrót</button>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+			    <footer class="bordered">
+				    <span class="space push-left"> Projekt z Systemów Wspomagania Decyzji, grudzień 2013 </span><span class="push-right content-right space">Dorota Kawalec, Sebastian Kościelny</span>
+			    </footer>
+			</div>
+		</div>
+
+		<script>
+		// (function(){
+			var controller = new Controller();
+			controller.initApp();
+
+			$('#submit').click(function(e){
+				e.preventDefault();
+				controller.run();
+			});
+			$('#restart').click(function(e){
+				e.preventDefault();
+				controller.restart();
+			});
+			$('#userfile').change(function(e){
+				controller.grabFile(e);
+			});
+		// })();
+		</script>
+	</body>
+</html>

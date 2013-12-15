@@ -1,0 +1,68 @@
+[
+    {
+        "name": "CSU",
+        "description": "Jest partią chrześcijańsko-społeczną. W centrum swoich zainteresowań stawia człowieka, wraz z jego prawami, potrzebami i dążeniami. W kwestiach gospodarczych stawia na silną gospodarkę, sprawiedliwy rynek pracy i społeczny współudział. W porównianiu do CDU jest bardziej przychylna w stosunku do interwencjonizmu państwowego.",
+        "values": {
+            "economy": 3,
+            "social": 6,
+            "religion": 6,
+            "immigration": 4
+        },
+        "imgurl": "http://upload.wikimedia.org/wikipedia/en/b/b8/CSU_logo.png"
+    },
+    {
+        "name": "CDU",
+        "description": "Jest to partia centroprawicowa, o konserwatywnym programie. W swojej działalności kieruje się zasadami chadeckimi. Pod względem gospodarczym realizuje program socjalliberalny, opowiada się za utrzymaniem podatków dochodowych progresywnych, dotacjami ze strony państwa na rzecz kultury, edukacji itp. Ponadto CDU jest za wolnością ekonomiczną i prorynkową Unią Europejską, silnym zwolennikiem integracji (przeciwnym jednak członkostwu Turcji).",
+        "values": {
+            "economy": 5,
+            "social": 4,
+            "religion": 5,
+            "immigration": 4
+        },
+        "imgurl": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/CDU_logo.svg/750px-CDU_logo.svg.png"
+    },
+    {
+        "name": "SPD",
+        "description": "Jest najstarszą partią istniejącą w parlamencie Niemieckim. Jak sama nazwa wskazuje, jest partią socjaldemokratyczną. Część założeń programowych opiera na ideach neoliberalnych. Podkreśla jednak, że ważna jest dla niej sprawiedliwość społeczna. Według programu SPD gospodarka narodowa powinna być wzmacniana przez państwo, a jej dobra powinny być sprawiedliwie rozdzielane.",
+        "values": {
+            "economy": 2,
+            "social": 3,
+            "religion": 4,
+            "immigration": 4
+        },
+        "imgurl": "http://upload.wikimedia.org/wikipedia/commons/a/a4/SPD_logo.svg"
+    },
+    {
+        "name": "FDP",
+        "description": "Centroprawicowa, liberalna partia polityczna. Postuluje liberalizm w dziedzinie światopoglądowej. Za swój główny cel stawia tworzenie miejsc pracy i zachęcanie przedsiębiorstw do inwestycji. Chce to osiągnąć za pomocą redukcji biurokracji, prywatyzacji, deregulacji i likwidacji subwencji. Po za tym opowiada się za utrzymaniem rogresywnych podatków dochodowych przy jednoczesnym obniżeniu progów podatkowych. Ponadto postuluje ograniczenie wydatków państwowych na świadczenia socjalne. FDP jest najbardziej liberalnym ugrupowaniem w Niemieckim parlamencie.",
+        "values": {
+            "economy": 6,
+            "social": 3,
+            "religion": 4,
+            "immigration": 4
+        },
+        "imgurl": "http://upload.wikimedia.org/wikipedia/commons/7/7f/FDP_Logo_2013.png"
+    },
+    {
+        "name": "Die Linke",
+        "description": "do podstawowych wartości partii należą: wolność, równość, solidarność i sprawiedliwość, co wiąże ona z pokojem, ochroną środowiska i emancypacją. W swoim programie sprzeciwia się prywatyzacji i militaryzacji, odwołuje się do idei głoszonych przez Karola Marksa i postuluje społeczną odpowiedzialność za zdrowie, rozwój regionów miejskich i wiejskich, zasoby wody i energii, powszechnie dostępną edukację, publiczny transport oraz rozwój kultury i nauki. W programie partii zawiera się również: upaństwowienie banków i koncernów energetycznych, opodatkowanie wielkich koncernów, spadków i majątków, wprowadzenie płacy minimalnej, zniesienie zasiłku socjalnego.",
+        "values": {
+            "economy": 1,
+            "social": 1,
+            "religion": 3,
+            "immigration": 4
+        },
+        "imgurl": "http://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Die_Linke_logo.svg/567px-Die_Linke_logo.svg.png"
+    },
+    {
+        "name": "Die Grune",
+        "description": "Centrolewicowa partia polityczna, która postuluje walkę z zanieczyszczeniem środowiska i promowanie praw zwierząt. Od lat 80. prowadzi kampanię przeciwko energii jądrowej. Bardzo liberalna obyczajowo. Postuluje objęcie specjalnymi podatkami wszystkich form transportu, inwestycje w naukę ukierunkowane na popularyzację transportu elektrycznego i wprowadzanie dodatkowych ograniczeń prędkości.",
+        "values": {
+            "economy": 3,
+            "social": 1,
+            "religion": 4,
+            "immigration": 4
+        },
+        "imgurl": "http://upload.wikimedia.org/wikipedia/bar/4/4b/B%C3%BCndnis_90_Die_Gr%C3%BCnen_Logo.svg.png"
+    }
+]

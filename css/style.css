@@ -1,0 +1,48 @@
+#header {
+	height: 150px;
+	background-color: black;
+}
+
+#content {
+	background-color: #EEE;
+}
+
+#partylogo {
+	width: 300px;
+	height: 100% auto;
+}
+
+div.control-group.column-group.gutters {
+	clear: none!important;
+}
+
+div.rounded {
+	border-radius: 4px;
+}
+
+td.right {
+	text-align: right;
+}
+
+.bordered {
+	border: 1px solid gray;
+}
+
+input {
+	cursor: pointer;
+}
+
+html {
+	background: url(images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
