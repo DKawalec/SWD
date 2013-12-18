@@ -8,6 +8,7 @@ function Controller() {
 		decisionMaker = new DecisionMaker();
 
 	self.initApp = function(){
+		decisionMaker.init();
 		fileReader.readDefault();
 		displayer.displayForm();
 	};
@@ -19,9 +20,9 @@ function Controller() {
 	self.run = function(){
 		var	fileContent = fileReader.getFileContent() || fileReader.getDefaultData(),
 			setup = inputReader.getValues(),
-			decision = decisionMaker.decide(fileContent, setup);
+			answer = decisionMaker.decide(fileContent, setup);
 
-		displayer.displayResults(fileContent[decision]);
+		displayer.displayResults(fileContent[answer.decision], answer.consistency);
 	};
 
 	self.restart = function(){

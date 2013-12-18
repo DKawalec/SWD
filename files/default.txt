@@ -6,7 +6,7 @@
             "economy": 3,
             "social": 6,
             "religion": 6,
-            "immigration": 4
+            "nationalization": 4
         },
         "imgurl": "http://upload.wikimedia.org/wikipedia/en/b/b8/CSU_logo.png"
     },
@@ -17,7 +17,7 @@
             "economy": 5,
             "social": 4,
             "religion": 5,
-            "immigration": 4
+            "nationalization": 4
         },
         "imgurl": "http://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/CDU_logo.svg/750px-CDU_logo.svg.png"
     },
@@ -28,7 +28,7 @@
             "economy": 2,
             "social": 3,
             "religion": 4,
-            "immigration": 4
+            "nationalization": 3
         },
         "imgurl": "http://upload.wikimedia.org/wikipedia/commons/a/a4/SPD_logo.svg"
     },
@@ -39,7 +39,7 @@
             "economy": 6,
             "social": 3,
             "religion": 4,
-            "immigration": 4
+            "nationalization": 6
         },
         "imgurl": "http://upload.wikimedia.org/wikipedia/commons/7/7f/FDP_Logo_2013.png"
     },
@@ -50,7 +50,7 @@
             "economy": 1,
             "social": 1,
             "religion": 3,
-            "immigration": 4
+            "nationalization": 1
         },
         "imgurl": "http://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Die_Linke_logo.svg/567px-Die_Linke_logo.svg.png"
     },
@@ -61,7 +61,7 @@
             "economy": 3,
             "social": 1,
             "religion": 4,
-            "immigration": 4
+            "nationalization": 4
         },
         "imgurl": "http://upload.wikimedia.org/wikipedia/bar/4/4b/B%C3%BCndnis_90_Die_Gr%C3%BCnen_Logo.svg.png"
     }

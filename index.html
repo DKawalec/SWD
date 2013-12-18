@@ -70,16 +70,16 @@
 									</div>
 								</div>
 								<div class="control-group column-group gutters large-60">
-									<label for="immigration" class="content-right large-30">imigracja</label>
+									<label for="nationalization" class="content-right large-30">prywatyzacja</label>
 									<div class="control large-70">
-										<input type="range" min="1" step="1" value="4" max="7" id="immigration">
-									<p class="tip content-center"><span class="push-left">otwarte granice</span><span class="push-right">zamknięte granice</span></p>
+										<input type="range" min="1" step="1" value="4" max="7" id="nationalization">
+									<p class="tip content-center"><span class="push-left">upaństwowienie</span><span class="push-right">prywatyzacja</span></p>
 									</div>
 								</div>
 								<div class="control-group column-group gutters large-40 push-right">
 									<label for="" class="content-right large-10"></label>
 									<div class="control large-90">
-										<input type="range" min="1" step="1" value="4" max="7" id="weight_immigration">
+										<input type="range" min="1" step="1" value="4" max="7" id="weight_nationalization">
 									<p class="tip content-center"><span class="push-left">nieistotne</span><span class="push-right">bardzo ważne</span></p>
 									</div>
 								</div>
@@ -99,6 +99,11 @@
 				<div id="results" class="space">
 					<h3>Wyniki</h3>
 					<div class="content-center">
+						<div id="consistency_warning" class="ink-alert block">
+							<h4>Ostrzeżenie o niespójności</h4>
+							<p>Wykryto niespójność macierzy preferencji. Mogło to wpłynąć niekorzystnie na precyzję podjętej decyzji. Zalecana jest modyfikacja wprowadzonych preferencji.</p>
+						</div>
+
 						<img src="" alt="logo partii tutaj" id="partylogo"/>
 						<h5 id="decision">Nazwa wybranej partii</h5>
 						<p id="description">Tutaj opis wybranej partii</p>
@@ -116,7 +121,7 @@
 		</div>
 
 		<script>
-		// (function(){
+		(function(){
 			var controller = new Controller();
 			controller.initApp();
 
@@ -131,7 +136,7 @@
 			$('#userfile').change(function(e){
 				controller.grabFile(e);
 			});
-		// })();
+		})();
 		</script>
 	</body>
 </html>

@@ -8,7 +8,7 @@ function InputReader() {
 			social: {},
 			economy: {},
 			religion: {},
-			immigration: {},
+			nationalization: {},
 		};
 
 		for(var i in opinionJson){
